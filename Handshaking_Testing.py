@@ -3,7 +3,7 @@
 import sys
 import RPI.GPIO as GPIO
 from time import sleep
-from tim import processing_time
+from time import processing_time
 
 GPIO.setmode(GPIO.BCM)
 
