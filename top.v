@@ -5,7 +5,7 @@
 // 
 // Create Date: 11/07/2021 12:25:35 PM
 // Design Name: 
-// Module Name: top
+// Module Name: FPGA_Handshake
 // Project Name: 
 // Target Devices: 
 // Tool Versions: 
@@ -20,7 +20,7 @@
 //////////////////////////////////////////////////////////////////////////////////
 
 
-module top(
+module FPGA_Handshake(
 input clk, 
 input reset_raw, 
 input pi_hsk_raw, 
