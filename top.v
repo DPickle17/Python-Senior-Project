@@ -24,7 +24,6 @@ module FPGA_Handshake(
 input clk, 
 input reset_raw, 
 input pi_hsk_raw, 
-input wire [7:0] data,
 input wire [7:0] PMOD,    
 output reg fpga_hsk
 );
