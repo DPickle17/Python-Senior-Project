@@ -9,6 +9,7 @@ GPIO.setwarnings(False)
 GPIO.setmode(GPIO.BCM)
 
 #Set variable names for GPIO pin numbers
+test_data = [0, 1, 0, 1, 0, 0, 0, 0]
 data_pins = [7, 11, 13, 15, 12, 16, 18, 22]
 RTS_pin = 29
 RTR_pin = 32
@@ -28,8 +29,10 @@ def send_byte(new_data):
     GPIO.input(data_pins)
 
 #assert RTS
-GPIO.output(RTS_pin, 1)
-print("RTS asserted")
+while(test_data is not None):
+    GPIO.output(RTS_pin, 1)
+    print("RTS asserted")
+    break
 
 #wait until RTR is asserted
 while(1):
